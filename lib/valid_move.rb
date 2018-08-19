@@ -4,6 +4,6 @@ def valid_move? (board, index)
   index .between?(0,8) && position_taken? == true
 end
 
- def position_taken? (board)
-   (board == " ")? true : false
+ def position_taken? (board, index)
+   (board[index] == " ")? true : false
  end
